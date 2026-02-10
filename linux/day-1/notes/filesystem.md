@@ -2,25 +2,26 @@
 
 ## Objective
 Understand how the Linux filesystem works and how to navigate it confidently.
-This is the foundation for working with cloud servers, VMs, containers, and DevOps tools.
+This is the foundation for working with Linux servers, cloud VMs, containers,
+and DevOps tools.
 
 ---
 
 ## 1. Core Linux Concepts
 
 ### Everything is a file
-In Linux:
+In Linux, everything is treated as a file:
 - Files
 - Directories
 - Devices
-- Configurations
+- Configuration files
 
 Everything is treated as a file.
 
 ---
 
-### Case sensitivity
-Linux is **case-sensitive**:
+### Case Sensitivity
+Linux is case-sensitive:
 - `Cloud`
 - `cloud`
 - `CLOUD`
@@ -32,42 +33,43 @@ All are different.
 ## 2. Important Directories (Cloud-Relevant)
 
 | Directory | Purpose |
-|---------|--------|
+|----------|---------|
 | `/` | Root of the filesystem |
 | `/home` | User home directories |
 | `/home/aditya` | My home directory |
 | `/etc` | System configuration files |
-| `/var` | Logs, runtime data |
+| `/var` | Logs and runtime data |
 | `/usr` | Installed programs |
 | `/tmp` | Temporary files |
 
-Cloud servers follow the **same structure**.
+Cloud servers follow the same structure.
 
 ---
 
 ## 3. Basic Commands Learned
 
-### `pwd`
+### pwd
 Prints the current working directory.
 
-Example:
 ```bash
 pwd
-```bash
+```
+
+
 list :-
-ls – List Files
+
+### ls – List Files
 Lists visible files and directories.
+
 ```bash
 ls
-```bash
-ls -l – Long Listing
-
+```
 Displays detailed information.
 ```bash
 ls -l
+```
 
 Example output:
-
 drwxr-xr-x 3 aditya aditya 4096 Feb 9 23:12 cloud-journey
 
 Permission breakdown:
@@ -82,7 +84,7 @@ Displays all files including hidden ones.
 ls -a
 Hidden files start with a dot (.).
 
-4. Hidden Files
+### 4. Hidden Files
 
 Hidden files store configuration and system settings.
 Examples:
@@ -93,8 +95,8 @@ Examples:
 To view hidden files:
 ```bash
 ls -a
-
-5. Directory Navigation
+```
+### 5. Directory Navigation
 
 cd – Change Directory
 Relative path
@@ -104,51 +106,55 @@ Absolute path
 cd /home/aditya/cloud-journey
 ```bash
 cd ..
+```
 Moves to the parent directory.
 ```bash
 cd ~
+```
 Moves to the home directory.
 
 For this system:
 ~ = /home/aditya
 
-6. Special Symbols in Linux
+### 6. Special Symbols in Linux
 Symbol	Meaning
 .	Current directory
 ..	Parent directory
 ~	Home directory
 /	Root directory
 
-7. Creating Files and Directories
+### 7. Creating Files and Directories
 
 Create a directory
 ```bash
 mkdir directory_name
-
+```
 Create a file
 ```bash
 touch file_name
-
+```
 Example:
 ```bash
 mkdir notes
 touch notes/filesystem.md
-
-8. Viewing File Structure
+```
+### 8. Viewing File Structure
 tree Command
 
 Displays directory structure visually.
+```bash
 tree ~/cloud-journey
+```
 This helps understand project layouts clearly.
 
 
-9. Errors Encountered and Their Meaning
+### 9. Errors Encountered and Their Meaning
 "Not a directory"
 Occurs when trying to use cd on a file.
 Example:
 ```bash
 cd filesystem.md
-
+```
 Reason:
 cd works only with directories, not files.
 
@@ -162,7 +168,7 @@ Reason:
 The file does not have execute permission
 .md files are meant to be opened, not executed
 
-10. Git Usage (Day 1)
+### 10. Git Usage (Day 1)
 
 Commands used:
 git status
@@ -193,10 +199,3 @@ Production environments
 
 ---
 
-## 🔁 What you should do now (final correction)
-
-```bash
-cd ~/cloud-journey
-git add .
-git commit -m "Fix Day 1 documentation formatting"
-git push
