@@ -53,17 +53,17 @@ Prints the current working directory.
 Example:
 ```bash
 pwd
+
 list :-
 ls – List Files
-
 Lists visible files and directories.
-
+```bash
 ls
 
 ls -l – Long Listing
 
 Displays detailed information.
-
+```bash
 ls -l
 
 Example output:
@@ -91,6 +91,7 @@ Examples:
 .ssh → SSH keys and known hosts
 
 To view hidden files:
+```bash
 ls -a
 
 5. Directory Navigation
@@ -101,10 +102,10 @@ cd cloud-journey
 
 Absolute path
 cd /home/aditya/cloud-journey
-
+```bash
 cd ..
 Moves to the parent directory.
-
+```bash
 cd ~
 Moves to the home directory.
 
@@ -121,11 +122,15 @@ Symbol	Meaning
 7. Creating Files and Directories
 
 Create a directory
+```bash
 mkdir directory_name
+
 Create a file
+```bash
 touch file_name
 
 Example:
+```bash
 mkdir notes
 touch notes/filesystem.md
 
@@ -141,7 +146,7 @@ This helps understand project layouts clearly.
 "Not a directory"
 Occurs when trying to use cd on a file.
 Example:
-
+```bash
 cd filesystem.md
 
 Reason:
@@ -183,3 +188,15 @@ Cloud virtual machines
 Linux servers
 Docker containers
 Production environments
+
+
+
+---
+
+## 🔁 What you should do now (final correction)
+
+```bash
+cd ~/cloud-journey
+git add .
+git commit -m "Fix Day 1 documentation formatting"
+git push
