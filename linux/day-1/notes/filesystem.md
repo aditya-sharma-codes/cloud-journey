@@ -53,13 +53,13 @@ Prints the current working directory.
 Example:
 ```bash
 pwd
-
+```bash
 list :-
 ls – List Files
 Lists visible files and directories.
 ```bash
 ls
-
+```bash
 ls -l – Long Listing
 
 Displays detailed information.
