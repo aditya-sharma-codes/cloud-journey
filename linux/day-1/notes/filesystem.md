@@ -81,7 +81,9 @@ r-x → others permission
 aditya → owner and group
 ls -a – Show Hidden Files
 Displays all files including hidden ones.
+```bash
 ls -a
+```
 Hidden files start with a dot (.).
 
 ### 4. Hidden Files
@@ -100,8 +102,9 @@ ls -a
 
 cd – Change Directory
 Relative path
+```bash
 cd cloud-journey
-
+```
 Absolute path
 cd /home/aditya/cloud-journey
 ```bash
